@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISEwrld Survey Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <main id="main">
+        <h1 id="title"> 
+            <span>
+                <i class="fa fa-bullseye" aria-hidden="true"></i>
+            </span>
+            ISEwrld Survey Form</h1>
+            <span>
+                <i class="fa fa-bullseye" aria-hidden="true"></i>
+            </span>
+            <p id="description">
+                Dear sneakfreaks, Thank you for taking the time to help us improve the platform. "ISEwrld"; for our feat...</p>
+                <form id="survey-form">
+                <div class="form-control"><label for="name" id="name-label"> Name</label>
+                    <input type="text" placeholder="e.g. Engr.Sage" id="name" required>
+                </div>
+                <div class="form-control"><label for="email" id="email-label"> Email</label>
+                    <input type="email" placeholder="e.g. sage@gmail.com" id="email" required>
+                </div>
+                <div class="form-control"><label for="number" id="number-label"> Tel Number:</label>
+                    <input type="number" placeholder="Enter Tel No" id="number" required>
+                </div>
+                <div class="form-control"><label for="age" id="age-label"> Age:</label>
+                    <input type="number" placeholder="Age" id="number" min="18" max="80">
+                </div>
+                <div class="Sex:">
+                    <p>Sex</p>
+                    
+                    <label for="male">
+                        <input type="radio" id="male" value="male" name="sex" required>Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" value="female" name="sex" required>Female
+                    </label>
+                    <label for="others">
+                        <input type="radio" id="others" value="others" name="sex" required>Others
+                    </label>
+                </div>
+                <p>What Option Describe Your Current Role</p>
+                <div class="form-control"><select name="dropdown" id="dropdown">
+                    <option disabled="" selected="" value=""> Select an option</option>
+                    <option value="student"> Student</option>
+                    <option value="part-time-student">Part-time Student</option>
+                    <option value="full-time-job">Full-time Job</option>
+                    <option value="contract-job">Contract Job</option>
+                    <option value="prefer-not-say">Prefer not say</option>
+                    <option value="others">Others</option>
+                </select>
+                </div>
+                <p>Would you recommend ISEwrld's merch to your friends?</p>
+                <div class="form-control">
+                    <label for="radio">Definetely</label>
+                    <input type="radio" id="radio" value="definetely" name="recommend">
+                </div>
+                <div class="form-control">
+                    <label for="radio">Maybe</label>
+                    <input type="radio" id="radio" value="Maybe" name="recommend">
+                </div>
+                <div class="form-control">
+                    <label for="radio">Not Sure</label>
+                    <input type="radio" id="radio" value="Not Sure" name="recommend">
+                </div>
+                <p>What is your favourite merch of ISEwrld?</p>
+                <div class="form-control"><select id="dropdown">
+                    <option disabled="" selected="" value="">Select an option</option>
+                    <option value="foot-wears">Foot Wears</option>
+                    <option value="mugs">Mugs</option>
+                    <option value="t-shirts">T-shirts</option>
+                    <option value="embroided-sweatshirts">Embroided Sweatshirts</option>
+                    <option value="home-decor">Home decor</option>
+                    <option value="jeans">Jeans (Denim)</option>
+                    <option value="leisure-wear">Leisure Wear</option>
+                    <option value="w-watch">Wrist Watches</option>
+                    <option value="others">Others</option>
+                </select>
+                </div>
+                <p>What would you like to see improved?  (check all that apply)</p>
+                <div class="form-control">
+                    <label for="checkbox">Foot Wears</label>
+                    <input type="checkbox" id="checkbox" value="foot wears">
+                </div>
+                <div class="form-control">
+                    <label for="checkbox">Apparel</label>
+                    <input type="checkbox" id="checkbox" value="Apparel">
+                </div>
+                <div class="form-control">
+                    <label for="checkbox">Equipment</label>
+                    <input type="checkbox" id="checkbox" value="equipment">
+                </div>
+                <div class="form-control">
+                    <label for="checkbox">Accessories</label>
+                    <input type="checkbox" id="checkbox" value="accessories">
+                </div>
+                <div class="form-control">
+                    <label for="checkbox">Designs</label>
+                    <input type="checkbox" id="checkbox" value="designs">
+                </div>
+                <div class="form-control">
+                    <label for="checkbox">Sales associate</label>
+                    <input type="checkbox" id="checkbox" value="sales">
+                </div>
+                <div class="form-control">
+                    <label for="checkbox">Data</label>
+                    <input type="checkbox" id="checkbox" value="data">
+                </div>
+                <div class="form-control">
+                    <label for="checkbox">Flexible Scheudle</label>
+                    <input type="checkbox" id="checkbox" value="flexible schedule">
+                </div>
+                <p>Any comments or suggestions?</p>
+                <div class="form-control">
+                    <textarea placeholder="Enter your comments here..."></textarea>
+                </div>
+                <button class="submit-button" id="submit">Submit</button>
+            </form>
+            <footer><strong>&copy;ISEwrld inc. 2022</strong></footer>
+                <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    </main> 
+</body>
+</html>
