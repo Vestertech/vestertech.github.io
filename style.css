@@ -72,3 +72,7 @@ button:hover {
     opacity: .6;
     
 }
+footer {
+    display: flex;
+    justify-content: center;
+}
