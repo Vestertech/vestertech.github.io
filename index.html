@@ -9,14 +9,8 @@
 </head>
 <body>
     <main id="main">
-        <h1 id="title"> 
-            <span>
-                <i class="fa fa-bullseye" aria-hidden="true"></i>
-            </span>
+        <h1 id="title">
             ISEwrld Survey Form</h1>
-            <span>
-                <i class="fa fa-bullseye" aria-hidden="true"></i>
-            </span>
             <p id="description">
                 Dear sneakfreaks, Thank you for taking the time to help us improve the platform. "ISEwrld"; for our feat...</p>
                 <form id="survey-form">
@@ -24,13 +18,13 @@
                     <input type="text" placeholder="e.g. Engr.Sage" id="name" required>
                 </div>
                 <div class="form-control"><label for="email" id="email-label"> Email</label>
-                    <input type="email" placeholder="e.g. sage@gmail.com" id="email" required>
+                    <input type="email" placeholder="e.g. sage@gmail.com" id="email" required/> 
                 </div>
                 <div class="form-control"><label for="number" id="number-label"> Tel Number:</label>
-                    <input type="number" placeholder="Enter Tel No" id="number" required>
+                    <input type="number" placeholder="Enter Tel No" id="number" required/>
                 </div>
                 <div class="form-control"><label for="age" id="age-label"> Age:</label>
-                    <input type="number" placeholder="Age" id="number" min="18" max="80">
+                    <input type="number" placeholder="Age" id="age" min="18" max="80"/>
                 </div>
                 <div class="Sex:">
                     <p>Sex</p>
@@ -46,7 +40,7 @@
                     </label>
                 </div>
                 <p>What Option Describe Your Current Role</p>
-                <div class="form-control"><select name="dropdown" id="dropdown">
+                <div class="form-control"><select name="dropdown-role" id="dropdown">
                     <option disabled="" selected="" value=""> Select an option</option>
                     <option value="student"> Student</option>
                     <option value="part-time-student">Part-time Student</option>
@@ -57,20 +51,20 @@
                 </select>
                 </div>
                 <p>Would you recommend ISEwrld's merch to your friends?</p>
-                <div class="form-control">
-                    <label for="radio">Definetely</label>
-                    <input type="radio" id="radio" value="definetely" name="recommend">
+                <div class="form-control inline">
+                    <label for="radio1">
+                    <input type="radio" id="radio1" value="definetely" name="recommend">Definetely</label>
                 </div>
-                <div class="form-control">
-                    <label for="radio">Maybe</label>
-                    <input type="radio" id="radio" value="Maybe" name="recommend">
+                <div class="form-control inline">
+                    <label for="radio2">
+                    <input type="radio" id="radio2" value="Maybe" name="recommend">Maybe</label>
                 </div>
-                <div class="form-control">
-                    <label for="radio">Not Sure</label>
-                    <input type="radio" id="radio" value="Not Sure" name="recommend">
+                <div class="form-control inline">
+                    <label for="radio3">
+                    <input type="radio" id="radio3" value="Not Sure" name="recommend">Not Sure</label>
                 </div>
                 <p>What is your favourite merch of ISEwrld?</p>
-                <div class="form-control"><select id="dropdown">
+                <div class="form-control"><select name="merch" id="dropdown1">
                     <option disabled="" selected="" value="">Select an option</option>
                     <option value="foot-wears">Foot Wears</option>
                     <option value="mugs">Mugs</option>
@@ -84,37 +78,37 @@
                 </select>
                 </div>
                 <p>What would you like to see improved?  (check all that apply)</p>
-                <div class="form-control">
-                    <label for="checkbox">Foot Wears</label>
-                    <input type="checkbox" id="checkbox" value="foot wears">
+                <div class="form-control inline">
+                    <label for="checkbox">
+                    <input type="checkbox" id="checkbox" value="foot wears">Foot Wears</label>
                 </div>
-                <div class="form-control">
-                    <label for="checkbox">Apparel</label>
-                    <input type="checkbox" id="checkbox" value="Apparel">
+                <div class="form-control inline">
+                    <label for="checkbox1">
+                    <input type="checkbox" id="checkbox1" value="Apparel">Apparel</label>
                 </div>
-                <div class="form-control">
-                    <label for="checkbox">Equipment</label>
-                    <input type="checkbox" id="checkbox" value="equipment">
+                <div class="form-control inline">
+                    <label for="checkbox2">
+                    <input type="checkbox" id="checkbox2" value="equipment">Equipment</label>
                 </div>
-                <div class="form-control">
-                    <label for="checkbox">Accessories</label>
-                    <input type="checkbox" id="checkbox" value="accessories">
+                <div class="form-control inline">
+                    <label for="checkbox3">
+                    <input type="checkbox" id="checkbox3" value="accessories">Accessories</label>
                 </div>
-                <div class="form-control">
-                    <label for="checkbox">Designs</label>
-                    <input type="checkbox" id="checkbox" value="designs">
+                <div class="form-control inline">
+                    <label for="checkbox4">
+                    <input type="checkbox" id="checkbox4" value="designs">Designs</label>
                 </div>
-                <div class="form-control">
-                    <label for="checkbox">Sales associate</label>
-                    <input type="checkbox" id="checkbox" value="sales">
+                <div class="form-control inline">
+                    <label for="checkbox5">
+                    <input type="checkbox" id="checkbox5" value="sales">Sales associate</label>
                 </div>
-                <div class="form-control">
-                    <label for="checkbox">Data</label>
-                    <input type="checkbox" id="checkbox" value="data">
+                <div class="form-control inline">
+                    <label for="checkbox6">
+                    <input type="checkbox" id="checkbox6" value="data">Data</label>
                 </div>
-                <div class="form-control">
-                    <label for="checkbox">Flexible Scheudle</label>
-                    <input type="checkbox" id="checkbox" value="flexible schedule">
+                <div class="form-control inline">
+                    <label for="checkbox7">
+                    <input type="checkbox" id="checkbox7" value="flexible schedule">Flexible Scheudle</label>
                 </div>
                 <p>Any comments or suggestions?</p>
                 <div class="form-control">
@@ -123,7 +117,7 @@
                 <button class="submit-button" id="submit">Submit</button>
             </form>
             <footer><strong>&copy;ISEwrld inc. 2022</strong></footer>
-                <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+                <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </main> 
 </body>
 </html>
