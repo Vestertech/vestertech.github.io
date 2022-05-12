@@ -1,0 +1,276 @@
+* ,
+* ::before,
+* ::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #a8328f;
+}
+
+.head {
+    background-color: #191212;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+}
+
+.head .logo {
+    width: 20%;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav ul li {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 10px;
+}
+
+section {
+    padding: 7em 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.split {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2em;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.split>* {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    min-width: 15em;
+}
+
+.spacing>*+* {
+    margin-top: var(--spacer, 2rem);
+}
+
+.btn {
+    display: inline-block;
+    -webkit-text-decoration: aqua;
+    text-decoration: aqua;
+    color: var(--clr-text, #fff);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    padding: .5em 1.25em;
+    background: var(--clr-accent, blue);
+    border-radius: .25em;
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+    opacity: .2 linear;
+}
+
+.btn:hover,
+.btn:focus {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .8;
+}
+
+.primary-title {
+    font-size: 4rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+    line-height: 1;
+    color: #17353d;
+    margin-bottom: 5rem;
+}
+
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 15em 0;
+    background-color: #222;
+}
+
+@supports (background-blend-mode: multiply) {
+    .hero {
+        background: url('./image/nike2.jpg'), radial-gradient(#444, #111);
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.featured {
+    background: #eee;
+}
+
+.featured__item {
+    display: block;
+    position: relative;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.featured__item span {
+    display: block;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.featured__item:hover,
+.featured__item:focus {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.featured__item:hover .featured__details,
+.featured__item:focus .featured__details {
+    opacity: .7;
+    text-shadow: 0 0 1em white;
+}
+
+.featured__item::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 75% 75% 0 0;
+    border-radius: 50%;
+    background: #2193b0;
+    z-index: -1;
+}
+
+.featured__details {
+    opacity: 0;
+    -webkit-transition: opacity 250ms linear;
+    transition: opacity 250ms linear;
+}
+
+.product {
+    background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+    padding: 3em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+}
+
+.product__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: blueviolet;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.product .product__image {
+    margin: -5em 0 0 0;
+}
+
+@media (min-width: 45em) {
+    .product {
+        text-align: left;
+        margin-bottom: 9em;
+    }
+
+    .product__image {
+        float: right;
+        width: 50%;
+        
+        margin: 1em;
+        margin: 0 -5em 0 0;
+    }
+} 
+
+.hero {
+    --clr-accent: #faa700;
+}
+
+.Denim {
+    --clr-inner: #008280;
+    --clr-outer: #444;
+    --clr-accent: limegreen;
+    color: #ffc745;
+}
+
+.Sneaks {
+    --clr-inner: #fcbe4c;
+    --clr-outer: #463b6d;
+    --clr-accent: #5fb9f5;
+    color: crimson;
+}
+
+.Shirt {
+    --clr-inner: #769;
+    --clr-outer: #444;
+    --clr-accent: #eb4949;
+}
+
+.form-control {
+    width: 75%;
+    margin: 5px 0 ;
+    padding: 5px;
+    border-radius: 5px;
+    
+
+}
+
+.foo {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+}
