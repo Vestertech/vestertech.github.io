@@ -68,8 +68,7 @@ section {
 }
 
 .split {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    
     display: flex;
     gap: 2em;
     -ms-flex-wrap: wrap;
@@ -273,4 +272,7 @@ section {
     justify-content: center;
     text-align: center;
     font-size: 1.25rem;
+    background-color: #191212;
+    color: white;
+    padding: 1em;
 }
