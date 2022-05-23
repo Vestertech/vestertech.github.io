@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altschool Portfolio Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="nav-bar">
+      <div class="container">
+        <div class="logo">Portfo<span>lio</span></div>
+        <ul class="nav">
+          <li><a href="./index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="register">
+        <h1 class="description">Sign-up to stay connected...</h1>
+        <form class="form" action="">
+          <div class="form-control">
+            <label for="first">Firstname</label>
+            <input type="text" id="first" placeholder="First Name" required />
+          </div>
+          <div class="form-control">
+            <label for="last">Lastname</label>
+            <input type="text" id="last" placeholder="Last Name" required />
+          </div>
+          <div class="form-control">
+            <label for="ph">Phone</label>
+            <input type="tel" id="ph" placeholder="Phone no:" required />
+          </div>
+          <div class="form-control">
+            <label for="country">country</label>
+            <input type="text" id="country" placeholder="Country" required />
+          </div>
+          <div class="form-control">
+            <label for="state">State</label>
+            <input type="text" id="state" placeholder="State" required />
+          </div>
+          <div class="form-control">
+            <label for="un">Username</label>
+            <input type="text" id="un" placeholder="Username" required />
+          </div>
+          <div class="form-control">
+            <label for="pw">Password</label>
+            <input type="password" id="pw" placeholder="Password" required />
+          </div>
+          <div class="form-control">
+            <label for="rpw">Password</label>
+            <input
+              type="password"
+              id="rpw"
+              placeholder="Confirm password"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <p>Sex</p>
+            <label for="ge">
+              <input
+                type="radio"
+                name="sex"
+                id="ge"
+                value="Male"
+                required
+              />Male</label
+            >
+            <label for="ge">
+              <input
+                type="radio"
+                name="sex"
+                id="ge"
+                value="Female"
+                required
+              />Female</label
+            >
+            <label for="ge">
+              <input
+                type="radio"
+                name="sex"
+                id="ge"
+                value="Prefer not to say"
+                required
+              />Prefer not to say</label
+            >
+          </div>
+          <button class="btn">submit</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer" class="foo">
+      <strong>&copy;Sylvertech2022</strong>
+    </footer>
+  </body>
+</html>

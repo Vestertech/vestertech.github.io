@@ -1,0 +1,125 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #6b6b6b;
+  background-color: aliceblue;
+}
+
+.main-container {
+  width: 30%;
+  padding: 20px 10px;
+  margin: 20px auto;
+  background: #7b7b;
+  height: 600px;
+  border-radius: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid green;
+}
+
+table thead {
+  height: 20%;
+  background: mintcream;
+}
+
+.main-display {
+  height: 20%;
+  background: white;
+  border-radius: 10px;
+
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+table tr {
+  background: blue;
+  margin: 10px;
+}
+
+table td {
+  text-align: center;
+  width: 25%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.number {
+  background: #F1F1F1;
+  cursor: pointer;
+}
+
+.delete {
+  background: yellow;
+}
+
+.operator {
+  background: rgba(0, 0, 115, 0.3);
+  color: white;
+}
+
+.clear {
+  background: #ff6347;
+  color: white;
+}
+
+.equal {
+  background: green;
+  color: white;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 500px) {
+
+  .logo {
+    display: none;
+  }
+
+  .main-container {
+    width: 80%;
+    height: 100vh;
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 500px) and (max-width: 767px) {
+  .main-container {
+    width: 300px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 10px;
+
+
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .main-container {
+    width: 350px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+
+  }
+}
