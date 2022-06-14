@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tai Heritage Pro', serif;
+    background-color: #05255d;
+    color: #fff;
+    font-size: x-large;
+    line-height: 1.6;
+    max-width: 100vw;
+}
+
+.container {
+    max-width: 100%;
+    
+}
+
+#navbar {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(3, 78, 216);
+}
+
+.navlink a {
+    font-size: 1.2em;
+    color: #fff;
+    padding: 1em;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+    transition: ease .3s;
+}
+.navlink a:hover {
+    background-color: #061a1c;
+    border-radius: 1em;
+    color: antiquewhite;
+}
+
+img {
+    max-width: 35vw;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
+}
+p {
+   text-align: center;
+   color: #fff;
+   padding-top: .8em;
+}
+
+.role {
+    padding-right: 1.5em;
+}
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vw;
+    background: url("https://unsplash.it/1080/720/?image=377") no-repeat fixed center / cover;
+    
+}
+
+.skills {
+    margin: 3em;
+    
+}
+
+.skills-header {
+    width: 50vw;
+    text-align: center;
+}
+
+.skills-tools {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.bar {
+    display: block;
+    height: 9px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgb(3, 3, 41);
+}
+
+.bar span {
+    height: 9px;
+    float: left;
+    background: rgb(1, 1, 226);
+}
+
+.html {
+    width: 70%;
+}
+
+.css {
+    width: 65%;
+}
+
+.python {
+    width: 70%;
+}
+
+.javascript {
+    width: 60%;
+}
+
+.django {
+    width: 75%;
+}
+
+.mysql {
+    width: 55%;
+}
+
+.btn {
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color: #c62d1f;
+    border-radius: 8px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size:1.4em;
+    padding: .4em 1.6em;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+    margin-top: .6em;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color: #f24437;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.project-title {
+    text-align: center;
+    padding-top: 1em;
+    margin: 1em;
+}
+
+.welcome-sec .grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+} 
+
+.box {
+    margin: 0 auto;
+    flex: 1;
+    /* background-color: blue; */
+    background: #0a51cc;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px 20px;
+}
+
+.welcome-sec .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: 0a51cc;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0.5, 0, 0, 0.7);
+    width: 95%;
+    height: 70vh;
+    margin: 0 auto;
+}
+.welcome-sec .info li {
+    max-width: 40vw;
+    padding-right: 1em; 
+}
+
+#contact .connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.connect li {
+    list-style-type: none;
+    
+}
+
+.connect .fab {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: .6em;
+    font-size: 2em;
+}
+
+.foo {
+    height: 90px;
+    background-color: rgb(3, 78, 216);
+    
+}
+.foo .fas {
+    color: red;
+}
+
+@media  (max-width: 600px) {
+    .navlink a {
+        font-size: .8em;
+        color: #fff;
+        padding: .4em;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    li, p, a.btn{
+        font-size: 12px;
+    }
+
+    #navbar, .foo {
+        height: 60px;
+    }
+
+}
