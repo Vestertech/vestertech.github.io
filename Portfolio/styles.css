@@ -85,7 +85,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vw;
+    height: 100vh;
     background: url("https://unsplash.it/1080/720/?image=377") no-repeat fixed center / cover;
     
 }
